@@ -73,7 +73,7 @@ hr.header-sep {
 
 @media (orientation: portrait) {
     #img-preview img {
-        width: 95%;
+        width: 85%;
     }
 }
 
