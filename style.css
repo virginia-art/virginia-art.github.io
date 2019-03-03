@@ -7,6 +7,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
 }
 
 header > * {
@@ -26,8 +28,6 @@ header ul li {
 }
 
 header ul li a {
-    /* color: white;
-    text-shadow: 2px 2px 0px black; */
     color: black;
     text-decoration: none;
 }
@@ -46,6 +46,24 @@ hr.header-sep {
 
 #gallery img {
     margin: 20px;
+}
+
+#img-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#img-preview img {
+    height: 95%;
+    box-shadow: 0 0 50px 5px black;
 }
 
 footer {
