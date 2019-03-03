@@ -9,11 +9,17 @@ header {
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: lighter;
 }
 
 header > * {
     display: inline;
     margin: 50px;
+}
+
+header > #social-links {
+    font-weight: bold;
 }
 
 header ul {
@@ -32,8 +38,20 @@ header ul li a {
     text-decoration: none;
 }
 
+#instagram-link a:hover {
+    background: linear-gradient(200deg, #d047d1 10%, #ff0000, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#fiverr-link a:hover {
+    color: #1dbf73;
+}
+
 hr.header-sep {
     width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #gallery {
