@@ -62,8 +62,19 @@ hr.header-sep {
 }
 
 #img-preview img {
-    height: 95%;
     box-shadow: 0 0 50px 5px black;
+}
+
+@media (orientation: landscape) {
+    #img-preview img {
+        height: 95%;
+    }
+}
+
+@media (orientation: portrait) {
+    #img-preview img {
+        width: 95%;
+    }
 }
 
 footer {
