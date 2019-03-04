@@ -18,10 +18,6 @@ header > * {
     margin: 50px;
 }
 
-header > #social-links {
-    font-weight: bold;
-}
-
 header ul {
     display: inline;
     padding: 0;
@@ -38,7 +34,24 @@ header ul li a {
     text-decoration: none;
 }
 
+header nav a {
+    -webkit-transition: text-shadow .1s;
+    transition: text-shadow .2s;
+}
+
+header nav a:hover {
+    text-shadow: -3px 3px 2px rgba(0, 0, 0, .5);
+    -webkit-transition: text-shadow .1s;
+    transition: text-shadow .1s;
+}
+
+#social-links {
+    font-weight: bold;
+}
+
 #instagram-link a:hover {
+    background: -moz-linear-gradient(200deg, #d047d1 10%, #ff0000, #ffff00);
+    background: -webkit-linear-gradient(200deg, #d047d1 10%, #ff0000, #ffff00);
     background: linear-gradient(200deg, #d047d1 10%, #ff0000, #ffff00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
