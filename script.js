@@ -22,7 +22,6 @@ $('.gallery-img').on('click', e => {
     const preview = $(`<img src="images/gallery/${imgNum}.png" />`);
     previewContainer.append(preview);
     previewContainer.show();
-    previewOpen = true;
 })
 
 $(previewContainer).on('click', () => {
