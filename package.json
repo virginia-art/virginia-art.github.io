@@ -1,0 +1,18 @@
+{
+  "name": "virginia-art.github.io",
+  "version": "1.0.0",
+  "main": "script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virginia-art/virginia-art.github.io.git"
+  },
+  "author": "Chen Jian",
+  "license": "ISC",
+  "homepage": "https://virginia-art.github.io",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-image-resize": "^0.13.0",
+    "gulp-replace": "^1.0.0"
+  }
+}

@@ -1,4 +1,4 @@
-const numImgs = 12;
+const numImgs = 12; // This line will be changed by gulp
 
 const gallery = $('#gallery');
 const previewContainer = $('#img-preview');
@@ -6,7 +6,7 @@ const previewContainer = $('#img-preview');
 for (let i = 0; i < numImgs; i++) {
     const img = $(`<img id="img-${i}"
                         class="gallery-img"
-                        src="images/gallery/${i}.png"
+                        src="images/downscaled/${i}.png"
                         width="${gallery.width() / 4}" />`);
     gallery.append(img);
 }
@@ -19,7 +19,7 @@ $(window).on('resize', () => {
 
 $('.gallery-img').on('click', e => {
     const imgNum = $(e.target).attr('id').split('-')[1];
-    const preview = $(`<img src="images/gallery/${imgNum}.png" />`);
+    const preview = $(`<img src="images/raw/${imgNum}.png" />`);
     previewContainer.append(preview);
     previewContainer.show();
 })
