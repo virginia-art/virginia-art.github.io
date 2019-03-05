@@ -89,6 +89,12 @@ hr.header-sep {
 #gallery img {
     margin: 20px;
     box-shadow: -5px 5px 25px 0 rgba(0, 0, 0, .4);
+    -webkit-transition: transform .1s ease-out;
+    transition: transform .1s ease-out;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
 }
 
 #img-preview {
