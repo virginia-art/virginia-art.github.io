@@ -78,6 +78,34 @@ hr.header-sep {
     margin-bottom: 0;
 }
 
+#loading {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+#loading p {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    text-align: center;
+    padding: 1rem;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+#loading.hidden {
+    opacity: 0;
+}
+
 #gallery {
     display: flex;
     flex-flow: row wrap;
@@ -98,15 +126,14 @@ hr.header-sep {
 }
 
 #img-preview {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    text-align: center;
     background-color: rgba(0, 0, 0, .5);
 }
 
