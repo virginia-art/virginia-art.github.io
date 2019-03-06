@@ -7,7 +7,7 @@ const fs = require('fs');
 function downscale(cb) {
   const all = fs.readdirSync('images/raw');
   const downscaled = fs.readdirSync('images/downscaled');
-  const diff = all.filter(filename => filename != '.DS_Store' && downscaled.indexOf(filename) < 0);
+  const diff = all.filter(filename => filename.endsWith('png') && downscaled.indexOf(filename) < 0);
 
   if (!diff.length)
     return Promise.resolve('There is nothing to be done');
@@ -18,7 +18,7 @@ function downscale(cb) {
 }
 
 function count(cb) {
-  const imgCount = fs.readdirSync('images/raw').filter(file => file != '.DS_Store').length;
+  const imgCount = fs.readdirSync('images/raw').filter(filename => filename.endsWith('png')).length;
   return src('script.js')
          .pipe(replace(/^const numImgs = \d+;/, `const numImgs = ${imgCount};`))
          .pipe(dest('.'));
