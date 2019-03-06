@@ -3,6 +3,10 @@
 ## Dependencies
 - NPM is absolutely required for the build scripts.
 - Both `imagemagick` and `graphicsmagick` are required in order for `gulp downscale` to work.
+  > On mac, install using [Homebrew](https://brew.sh/):
+  > ```bash
+  > $ brew install imagemagick graphicsmagick
+  > ```
 
 ## How to add pictures
 Put new pictures in `images/raw` WITH APPROPRIATE NAMES: #.png, where # is substituted with the number of the image. Pictures will be displayed on the website in a specific order based on their filenames.
